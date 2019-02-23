@@ -1,6 +1,6 @@
 #include "bits/stdc++.h"
 using  namespace std;
-bool dp[505][505];
+bool dp[505][505]; //dp[partial sum of chocolate's cost][chocolate's cost]
 int main()
 {
 	int n,make;
