@@ -64,7 +64,7 @@ int main()
 	
 	CLR(dist) //for more information,go to #define zone
 	dfs(mfar,mfar);
-	maxn=-1;
+	maxn=-1; //don't forget to reset this value
 	for(int i=1;i<=e;i++)
 	{
 		if(maxn<dist[p[i]])
