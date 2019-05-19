@@ -27,20 +27,20 @@ int main()
 			mn=min(mn,dp[i-1][j]);
 		}
 	}
-	for(int i=1;i<=3;i++)
-	{
-		//int mn = dp[i-1][0];
-		for(int j=0;j<=10;j++)
-		{
-			cout << dp[i][j] << " ";
-		}
-		cout << "\n";
-	}
-	// int ans=dp[n][0];
-
-	// for(int i=1;i<=3000;i++)
+	// for(int i=1;i<=3;i++)
 	// {
-	// 	ans=min(ans,dp[n][i]);
+	// 	//int mn = dp[i-1][0];
+	// 	for(int j=0;j<=10;j++)
+	// 	{
+	// 		cout << dp[i][j] << " ";
+	// 	}
+	// 	cout << "\n";
 	// }
-	// cout << ans;
+	int ans=dp[n][0];
+
+	for(int i=1;i<=3000;i++)
+	{
+		ans=min(ans,dp[n][i]);
+	}
+	cout << ans;
 }
