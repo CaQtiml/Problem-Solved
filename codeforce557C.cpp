@@ -24,6 +24,8 @@ int main()
 		while(j<=n && p[j].f == p[j-1].f) j++;
 		int sum = presum[i]+postsum[j];
 		int k = j-i-1; // -1 to guarantee that the amount of longest legs will more than half of the amount of all legs
+		
+		//destroy the legs that easy to break first
 		for(auto it = ms.begin() ; it!=ms.end() and k ; it++)
 		{
 			k--;
